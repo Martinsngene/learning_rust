@@ -237,7 +237,46 @@ fn main() {
     // }
 
     // Looping
-    loop {
-        println!("Help! I can't Stop")
+
+    // Initialize a variable for the index
+    // let mut i: u32 = 10;
+
+    // The Loop
+    // loop {
+
+    //     // Condition to break loop
+    //     if i == 0 {
+    //         break;
+    //     }
+
+    //     // Print out the index
+    //     println!("{i}...");
+
+    //     // Statement to achieve condition
+    //     i -= 1
+    // }
+    // println!("Launch!!!");
+
+    // While Loop
+
+    // while i != 0 {
+    //     // Print out the index
+    //     println!("{i}...");
+
+    //     // Statement to achieve condition
+    //     i -= 1
+    // }
+    // println!("Launch!!!");
+
+    // For Loop
+
+    for i in (1..=10).rev() {
+        // To skip odd numbers
+        if i % 2 != 0 {
+            continue;
+        }
+        // Print out the index
+        println!("{i}...");
     }
+    println!("Launch!!!");
 }
