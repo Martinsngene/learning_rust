@@ -185,14 +185,14 @@ fn main() {
     // Variables in a scope can only be accessed in that scope.
 
     // New Scope
-    {
+    // {
         // _x variable exists globally but because of scoping in rust,
         // it is different from the one in this scope which is marked by the curly braces.
         // NOTE: if _x is mutable, the value in the scope will update the global value.
         // let _x: i16 = 19;
         // let _z: i16 = 19;
         // println!("{}", _x);
-    }
+    // }
 
     // Shadowing: This allows us to redefine a variable
     // let a: i32 = 4;
@@ -270,13 +270,28 @@ fn main() {
 
     // For Loop
 
-    for i in (1..=10).rev() {
-        // To skip odd numbers
-        if i % 2 != 0 {
-            continue;
-        }
-        // Print out the index
-        println!("{i}...");
-    }
-    println!("Launch!!!");
+    // for i in (1..=10).rev() {
+    //     // To skip odd numbers
+    //     if i % 2 != 0 {
+    //         continue;
+    //     }
+    //     // Print out the index
+    //     println!("{i}...");
+    // }
+    // println!("Launch!!!");
+
+    // Pattern Matching
+    // struct Plant{
+    //     flowering: bool,
+    //     mass: f64
+    // }
+
+    // let Plant {flowering, mass};
+
+    // let plant: Plant = Plant{
+    //     flowering: true,
+    //     mass: 10.0
+    // };
+
+    // let Plant {flowering, mass} = plant;
 }
