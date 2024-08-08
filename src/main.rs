@@ -186,12 +186,12 @@ fn main() {
 
     // New Scope
     // {
-        // _x variable exists globally but because of scoping in rust,
-        // it is different from the one in this scope which is marked by the curly braces.
-        // NOTE: if _x is mutable, the value in the scope will update the global value.
-        // let _x: i16 = 19;
-        // let _z: i16 = 19;
-        // println!("{}", _x);
+    // _x variable exists globally but because of scoping in rust,
+    // it is different from the one in this scope which is marked by the curly braces.
+    // NOTE: if _x is mutable, the value in the scope will update the global value.
+    // let _x: i16 = 19;
+    // let _z: i16 = 19;
+    // println!("{}", _x);
     // }
 
     // Shadowing: This allows us to redefine a variable
